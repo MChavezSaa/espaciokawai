@@ -8,6 +8,7 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { MatButtonModule } from '@angular/material/button';
     CarritoComponent, 
     NavbarComponent,
     SidebarComponent,
+    FooterComponent,
     //aqui los imports de angular material
     MatToolbarModule,
     MatIconModule,

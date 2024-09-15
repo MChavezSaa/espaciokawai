@@ -1,0 +1,51 @@
+@footer-bg-color: #f8f9fa;
+@footer-padding: 20px 0;
+@footer-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+@icon-color: #3b5998;
+@icon-hover-color: #0d47a1;
+@text-color: #555;
+@icon-size: 24px;
+@icon-margin: 10px;
+
+.footer {
+  background-color: @footer-bg-color;
+  padding: @footer-padding;
+  text-align: center;
+  box-shadow: @footer-shadow;
+}
+
+.social-media {
+  margin-bottom: 10px;
+
+  a {
+    margin: 0 @icon-margin;
+    color: @icon-color;
+    font-size: @icon-size;
+    text-decoration: none;
+
+    &:hover {
+      color: @icon-hover-color;
+    }
+  }
+}
+
+p {
+  margin: 0;
+  color: @text-color;
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;  // Esto asegura que esté por encima de otros elementos si es necesario
+
+  // Si necesitas añadir algún contenido con desplazamiento, este es opcional:
+  @media (min-height: 500px) {
+    padding: 20px;
+  }
+}

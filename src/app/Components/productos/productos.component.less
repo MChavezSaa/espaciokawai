@@ -1,0 +1,25 @@
+@card-border-color: #ddd;
+@card-padding: 10px;
+@card-margin-bottom: 10px;
+@card-border-radius: 5px;
+@box-shadow-color: rgba(0, 0, 0, 0.1);
+@transition-duration: 0.3s;
+
+.card {
+  border: 1px solid @card-border-color;
+  padding: @card-padding;
+  margin-bottom: @card-margin-bottom;
+  border-radius: @card-border-radius;
+  box-shadow: 0 4px 8px @box-shadow-color;
+  transition: @transition-duration;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  margin-top: @card-padding;
+}
