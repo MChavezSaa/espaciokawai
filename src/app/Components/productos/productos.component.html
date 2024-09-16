@@ -1,6 +1,6 @@
 <div class="max-height-div">
-
     <div class="row">
+        <!-- Productos -->
         @for (product of paginatedProducts; track product.id) {
         <div class="col-4">
             <div class="card" style="width: 18rem; margin-top: 20px;">
@@ -13,10 +13,9 @@
         </div>
         }
     </div>
-    
-    <!-- Paginador -->
-    
-    <mat-paginator class="sticky-footer" [length]="products.length" [pageSize]="pageSize" [pageSizeOptions]="[3, 6, 9]"
+
+    <!-- Paginador (no debe ser sticky) -->
+    <mat-paginator [length]="products.length" [pageSize]="pageSize" [pageSizeOptions]="[3, 6, 9]"
         (page)="handlePageEvent($event)">
     </mat-paginator>
 </div>

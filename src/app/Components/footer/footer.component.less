@@ -33,19 +33,14 @@ p {
   margin: 0;
   color: @text-color;
 }
-
 .sticky-footer {
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 10px;
-  z-index: 1000;  // Esto asegura que esté por encima de otros elementos si es necesario
+  z-index: 10;
+}
 
-  // Si necesitas añadir algún contenido con desplazamiento, este es opcional:
-  @media (min-height: 500px) {
-    padding: 20px;
-  }
+/* Añadir un margen inferior al contenido para que no se superponga con el footer */
+.max-height-div {
+  margin-bottom: 100px; /* Ajusta el valor según la altura del footer */
 }
