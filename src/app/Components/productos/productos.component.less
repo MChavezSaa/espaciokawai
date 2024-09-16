@@ -23,3 +23,23 @@
 .card-body {
   margin-top: @card-padding;
 }
+
+
+/* Asegúrate de que el contenedor de productos tenga una altura mínima */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px; /* Ajusta según sea necesario */
+}
+
+/* Asegúrate de que el paginador esté siempre en la parte inferior */
+.paginator-container {
+  margin-top: auto;
+  display:inline-block;
+  justify-content: center;
+}
+
+.max-height-div {
+  max-height: 500px; /* La altura máxima será el 50% de la altura del viewport */
+  /*overflow-y: auto;  Agrega barras de desplazamiento si el contenido excede la altura máxima */
+}
